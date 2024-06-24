@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oroma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    @font-face {
+      font-family: "South Catalonia";
+      src: url("South Catalonia.otf");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .bg-cream {
+      background-color: #fffdd0;
+    }
+
+    body {
+      background-color: #4c0013;
+      color: white;
+    }
+
+    .handwrite {
+      font-family: "South Catalonia";
+    }
+
+    .relative {
+      position: relative;
+      z-index: 10;
+    }
+
+    .text-behind {
+      position: absolute;
+      z-index: 1;
+      top: 40%;
+      color: rgba(
+        0,
+        0,
+        0,
+        0.1
+      ); /* Light color to make it look like it's behind */
+      font-size: 4rem; /* Larger text size */
+    }
+  </style>
+  <body>
+    <div class="flex h-screen gap-4 justify-center flex-col items-center">
+      <h1 class="handwrite text-4xl">M'bon, que m'as-tu demandé ?</h1>
+      <button class="bg-cream hover:underline hover:text-white hover:border transition-all hover:bg-transparent flex items-center text-black gap-3 p-3 rounded-full">
+         <a href="wikwik.pdf">Téléchargement le document word</a>
+         <img src="word-svgrepo-com.svg" class="h-8" alt="">
+      </button>
+
+      <div class="relative">
+        <img
+          src="https://i.pinimg.com/564x/dd/ee/fa/ddeefa1e7c30a78cd985f2c77d4377ec.jpg"
+          alt=""
+          class="h-[300px]"
+        />
+        <h1 class="text-behind">Oroma Baby</h1>
+      </div>
+    </div>
+  </body>
+</html>
